@@ -4,17 +4,21 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToOne;
 
-@Entity // indica que essa classe representa uma tabela - Java JPA
+@Entity
 public class Produto {
-    
-    @Id // indica que essa coluna representa a PK da tabela
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // gera automaticamente o valor da PK
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String nome;
     private String descricao;
     private double preco;
     private Integer quantidade;
+
+    @OneToOne(mappedBy = "produto") 
+    private Categoria categoria;
 
     public Integer getId() {
         return id;
@@ -51,10 +55,16 @@ public class Produto {
     public Integer getQuantidade() {
         return quantidade;
     }
-    
+
     public void setQuantidade(Integer quantidade) {
         this.quantidade = quantidade;
     }
 
-    
+    public Categoria getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(Categoria categoria) {
+        this.categoria = categoria;
+    }
 }
