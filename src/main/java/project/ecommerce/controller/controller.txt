@@ -1,0 +1,2 @@
+Contém as classes que definem os endpoints da API e a lógica de manipulação das requisições HTTP.
+Exemplo: ProdutoController.java, ClienteController.java.

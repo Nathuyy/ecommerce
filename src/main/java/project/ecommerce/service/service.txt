@@ -1,0 +1,2 @@
+service/: Contém as classes de serviço que encapsulam a lógica de negócios e interagem com os repositórios.
+Exemplo: ProdutoService.java, ClienteService.java.
