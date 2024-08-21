@@ -1,2 +1,0 @@
-repository/: Contém as interfaces que estendem JpaRepository ou CrudRepository, responsáveis pelo acesso aos dados.
-Exemplo: ProdutoRepository.java, ClienteRepository.java.
