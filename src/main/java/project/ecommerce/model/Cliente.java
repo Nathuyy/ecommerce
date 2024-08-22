@@ -17,7 +17,8 @@ public class Cliente {
     private String nome;
     private String sobrenome;
     private String email;
-    private String endereco;
+    private String senha;
+
 
 
     //relacionando com a tabela pedidos
@@ -56,13 +57,14 @@ public class Cliente {
         this.email = email;
     }
 
-    public String getEndereco() {
-        return endereco;
+    public String getSenha() {
+        return senha;
     }
 
-    public void setEndereco(String endereco) {
-        this.endereco = endereco;
+    public void setSenha(String senha) {
+        this.senha = senha;
     }
+
 
     
     
